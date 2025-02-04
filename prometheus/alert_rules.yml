@@ -1,0 +1,12 @@
+groups:
+  - name: alertas_sistema
+    rules:
+      - alert: CPUAlta
+        expr: 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100) > 80
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Uso de CPU alto en {{ $labels.instance }}"
+          description: "El uso de CPU ha superado el 80% en {{ $labels.instance }}."
+

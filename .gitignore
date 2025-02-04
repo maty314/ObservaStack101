@@ -1,0 +1,8 @@
+loki/wal/
+loki/cache/
+loki/index/
+loki/chunks/
+loki/compactor/
+grafana-data/
+prometheus-data/
+

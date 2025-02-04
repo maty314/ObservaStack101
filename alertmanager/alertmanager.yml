@@ -1,0 +1,14 @@
+global:
+  smtp_smarthost: 'smtp.example.com:587'
+  smtp_from: 'alertas@example.com'
+  smtp_auth_username: 'usuario@example.com'
+  smtp_auth_password: 'tu_password'
+
+route:
+  receiver: 'correo'
+
+receivers:
+  - name: 'correo'
+    email_configs:
+      - to: 'matias.nicolas.pi@gmail.com'
+

@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: 'default'
+    folder: 'ObservaStack Dashboards'
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards
+      disableDeletion: false
+      updateIntervalSeconds: 10
+
