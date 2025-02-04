@@ -1,6 +1,6 @@
 # ObservaStack101
 
-## **ObservaStack101** is an observability stack designed for monitoring, log management, and automated alerting.
+Is an observability stack designed for monitoring, log management, and automated alerting.
 The primary purpose is to practice and get familiar with these observability tools.
 A simple dashboard is out-of-the box showing logs using Loki and Metrics using Prometheus.
 It integrates **Prometheus**, **Grafana**, **Loki**, **Alertmanager**, and **Promtail**.
